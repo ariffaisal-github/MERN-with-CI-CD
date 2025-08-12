@@ -1,16 +1,16 @@
 name: Run MERN App
 
 on:
-	push:
-		branches:
-			- main
+  push:
+    branches:
+      - main
 
 jobs:
-	print-readme-first-line:
-		runs-on: ubuntu-latest
-		steps:
-			- name: Git Checkout
-				uses: actions/checkout@v4
-				
-			- name: Print the first line of the README.md file
-				run: head -n 1 README.md
+  print-readme-first-line:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v4
+      
+      - name: Print the first line of the README.md file
+        run: head -n 1 README.md
